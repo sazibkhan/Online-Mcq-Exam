@@ -13,9 +13,9 @@ public class AnswerOptionService {
 		answerOptionDAO = new AnswerOptionDAOImpl();
 	}
 
+	// Save.............
 	public void saveOrUpdateAnswerOption(AnswerOptionDTO answerOptionDTO) {
 		answerOptionDAO.saveOrUpdateAnswerOption(copyDtoToEntity(answerOptionDTO));
-
 	}
 
 	public AnswerOptionEntriy copyDtoToEntity(AnswerOptionDTO answerOptionDTO) {
@@ -25,12 +25,11 @@ public class AnswerOptionService {
 		answerOptionEntriy.setQuestionEntity(provideQuestionEntityById(answerOptionDTO.getQuestionId()));
 		return answerOptionEntriy;
 	}
-	
+
 	public QuestionEntity provideQuestionEntityById(Long questionId) {
-		QuestionEntity questionEntity=new QuestionEntity();
+		QuestionEntity questionEntity = new QuestionEntity();
 		questionEntity.setQuestionId(questionId);
 		return questionEntity;
 	}
-
 
 }

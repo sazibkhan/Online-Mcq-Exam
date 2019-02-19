@@ -11,11 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.jsp.mcqexam.dto.AnswerScriptDTO;
-import com.jsp.mcqexam.dto.ParticipantDTO;
-import com.jsp.mcqexam.dto.QuestionDTO;
 import com.jsp.mcqexam.service.AnswerScriptService;
-import com.jsp.mcqexam.service.ParticipantService;
-import com.jsp.mcqexam.service.QuestionService;
 
 public class AnswerScriptServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -23,7 +19,6 @@ public class AnswerScriptServlet extends HttpServlet {
 	@Override
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		showAllAnswerScript(request, response);
-		// ShowAllParticipant(request, response);
 	}
 
 	@Override

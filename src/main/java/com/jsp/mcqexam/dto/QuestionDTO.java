@@ -1,6 +1,9 @@
 package com.jsp.mcqexam.dto;
 
 import java.util.Date;
+import java.util.List;
+
+import com.jsp.mcqexam.entity.AnswerOptionEntriy;
 
 public class QuestionDTO {
 
@@ -8,6 +11,8 @@ public class QuestionDTO {
 	private String questionName;
 	private String questionAnswer;
 	private String questionSetNo;
+	
+	private List<AnswerOptionEntriy> optionEntites;
 
 	private int activeStatus;
 	private Date dateTime;
@@ -58,6 +63,14 @@ public class QuestionDTO {
 
 	public void setDateTime(Date dateTime) {
 		this.dateTime = dateTime;
+	}
+
+	public List<AnswerOptionEntriy> getOptionEntites() {
+		return optionEntites;
+	}
+
+	public void setOptionEntites(List<AnswerOptionEntriy> optionEntites) {
+		this.optionEntites = optionEntites;
 	}
 
 }

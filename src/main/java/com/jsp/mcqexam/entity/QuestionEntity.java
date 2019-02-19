@@ -2,6 +2,7 @@ package com.jsp.mcqexam.entity;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -33,8 +34,8 @@ public class QuestionEntity implements Serializable {
 	private int activeStatus;
 
 	@Column(name = "dateTime")
-	private Date dateTime;
-
+	private Date dateTime;	
+	
 	public Long getQuestionId() {
 		return questionId;
 	}
@@ -81,6 +82,5 @@ public class QuestionEntity implements Serializable {
 
 	public void setDateTime(Date dateTime) {
 		this.dateTime = dateTime;
-	}
-
+	}	
 }

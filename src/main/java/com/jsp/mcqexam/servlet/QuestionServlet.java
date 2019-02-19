@@ -20,16 +20,14 @@ public class QuestionServlet extends HttpServlet {
 
 	@Override
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		findAllQuestions(request, response);
-		
 	}
 
 	@Override
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		saveOrUpdateQuestion(request, response);
 	}
-
+//save
 	public void saveOrUpdateQuestion(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		QuestionService questionService = new QuestionService();
@@ -47,7 +45,7 @@ public class QuestionServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 	}
-
+//view
 	public void findAllQuestions(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 

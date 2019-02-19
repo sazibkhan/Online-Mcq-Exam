@@ -25,6 +25,7 @@ public class AnswerOptionServlet extends HttpServlet {
 		saveOrUpdateAnswerOption(request, response);
 	}
 
+	//Save......................
 	public void saveOrUpdateAnswerOption(HttpServletRequest request, HttpServletResponse response) {
 		AnswerOptionService answerOptionService = new AnswerOptionService();
 
@@ -35,6 +36,7 @@ public class AnswerOptionServlet extends HttpServlet {
 		answerOptionService.saveOrUpdateAnswerOption(answerOptionDTO);
 	}
 
+	//view ..................
 	private void ShowAllQuestions(HttpServletRequest request, HttpServletResponse response) {
 		QuestionService questionService = new QuestionService();
 		List<QuestionDTO> questionDTOs = questionService.findAllQuestions();

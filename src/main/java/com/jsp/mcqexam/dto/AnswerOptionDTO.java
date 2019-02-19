@@ -8,7 +8,7 @@ public class AnswerOptionDTO {
 	private String optionLabel;
 	private String optionTitle;
 	private Long questionId;
-	private QuestionEntity questionEntity;
+	private QuestionDTO questionDTO;	
 
 	public Long getOptionId() {
 		return optionId;
@@ -42,12 +42,12 @@ public class AnswerOptionDTO {
 		this.questionId = questionId;
 	}
 
-	public QuestionEntity getQuestionEntity() {
-		return questionEntity;
+	public QuestionDTO getQuestionDTO() {
+		return questionDTO;
 	}
 
-	public void setQuestionEntity(QuestionEntity questionEntity) {
-		this.questionEntity = questionEntity;
+	public void setQuestionDTO(QuestionDTO questionDTO) {
+		this.questionDTO = questionDTO;
 	}
 
 }

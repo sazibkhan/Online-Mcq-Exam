@@ -17,7 +17,7 @@ public class QuestionDAOImpl implements QuestionDAO {
 		HibernateUtil.commitSession(session);
 
 	}
-
+//View
 	public List<QuestionEntity> findAllQuestions() {
 		Session session = HibernateUtil.provideSession();
 		List<QuestionEntity> questionEntities = session.createQuery("from QuestionEntity").list();
